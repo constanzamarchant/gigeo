@@ -1,0 +1,18 @@
+.main_hero{
+	display: flex;
+	justify-content: space-between;
+
+	&__container{
+		background-image: url('../images/image-banner.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		padding-bottom: 15rem;
+	}
+
+	&__image{
+		background-image: url('../images/profile-image.png');
+		width: 150px;
+		height: 150px;
+	}
+}

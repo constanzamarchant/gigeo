@@ -63,6 +63,11 @@
  * @since 1.0
  *
  */
+body {
+  margin: 0;
+  padding: 0;
+}
+
 /*
  *
  * En sitios/aplicaciones grandes es usual tener distintos temas o 
@@ -93,6 +98,39 @@
  * @since 1.0
  *
  */
+.main_nav__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2em;
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+.nav ul li {
+  display: inline-block;
+  padding: 0 2em;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.main_hero {
+  display: flex;
+  justify-content: space-between;
+}
+.main_hero__container {
+  background-image: url("../images/image-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 15rem;
+}
+.main_hero__image {
+  background-image: url("../images/profile-image.png");
+  border: 50%;
+  width: 150;
+  height: 150;
+}
+
 /*
  * 
  * Esta carpeta fue creada para componentes o módulos pequeños como por ejemplo: 
