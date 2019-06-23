@@ -1,0 +1,71 @@
+.profile{
+	&__container{
+		display: flex;
+		justify-content: space-between;
+		padding: 2rem 7rem;
+	}
+
+	&__image{
+		background-image: url('../images/profile-image.png');
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+		background-size: cover;
+		background-position: center;
+	}
+
+	&__title{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: bold;
+		font-size: 18px;
+	}
+
+	&__followers{
+		font-size: 12px;
+		font-family: 'Montserrat', sans-serif;
+		color: gray;
+	}
+}
+
+.desc{
+	flex: 1;
+	align-self: center;
+	margin-left: 2rem;
+}
+
+.btns{
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	align-self: center;
+
+	&__btn{
+		&--primary{
+			display: inline-block;
+			padding:.5rem;
+			background-color: #92dce5;
+		}
+		&--secondary{
+			margin-left: .5rem;
+			display: inline-block;
+			padding:.5rem;
+			background-color: #ef6461;
+		}
+	}
+}
+
+.separator{
+	border: 0.1px solid silver;
+}
+
+@media all and (max-width: 576px) {
+	.btns{
+		display: none;
+	}
+
+	.profile{
+		&__container{
+			padding: 2rem;
+		}
+	}
+}

@@ -2,17 +2,41 @@
 	&__container{
 		display: flex;
 		justify-content: space-between;
-		padding-top: 2em;
-		padding-right: 2em;
-		padding-left: 2em;
+		padding: 2rem 7rem;
 	}
+
+	&__icons{
+		align-self: center;
+	}
+}
+
+.logo{
+	flex:1;
 }
 
 .nav{
 	ul li{
 	display: inline-block;
-	padding: 0 2em;
+	padding: 0 1em;
 	font-family: monospace;
 	font-weight: bold;
 	}
+}
+
+.toggler{
+	align-self: center;
+	margin-bottom: 0.6rem;
+	margin-left: 1rem;
+}
+
+@media all and (max-width: 576px) {
+	.main_nav{
+		&__icons{
+			display: none;
+	 	}
+
+	 	&__container{
+	 	padding:2rem;
+	 	}
+ 	}
 }

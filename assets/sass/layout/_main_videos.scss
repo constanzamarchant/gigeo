@@ -1,0 +1,38 @@
+.main_videos{
+	&__container{
+		display: flex;
+		justify-content: center;
+		padding:2rem 5rem;
+		flex-wrap: wrap;
+	}
+
+	&__title{
+		font-family: 'Montserrat', sans-serif;
+		font-size: 20px;
+		margin-bottom:2rem;
+	}
+
+	&__thumb{
+		width: 250px;
+		height: 150px;
+		background-size: cover;
+		background-position: center;
+	}
+
+	&__subtitle{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: bold;
+		font-size: 14px;
+	}
+
+	&__views{
+		font-size: 14px;
+		font-family: 'Montserrat', sans-serif;
+		color: gray;
+	}
+}
+
+.item{
+	align-self: end;
+	margin:2rem;
+}
